@@ -9,6 +9,25 @@
 import UIKit
 
 class RotateViewController: UIViewController {
+    
+    
+    enum UserDetailError: Error {
+        case noValidName
+        case noValidAge
+    }
+    
+    
+    func userTest(age: Int, name: String) throws {
+        
+        guard age > 0 else{
+            throw UserDetailError.noValidAge
+        }
+        
+        guard name.count > 0 else{
+            throw UserDetailError.noValidName
+        }
+    }
+
 
     @IBAction func closeAction(_ sender: Any) {
         let value = UIInterfaceOrientation.landscapeRight.rawValue
@@ -21,14 +40,17 @@ class RotateViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        do{
+            try userTest(age: -1, name: "")
+        } catch let error {
+            print("Error: \(error)")
+            if let url = URL(string: "https://www.stackoverflow.com/search?q=[swift]+\(error)"), UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url)
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .landscapeRight
     }
