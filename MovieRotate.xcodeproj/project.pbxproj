@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60B0014B216ADA7700C5D370 /* RotateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0014A216ADA7600C5D370 /* RotateViewController.swift */; };
 		60E1AB96216757E0004A0FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E1AB95216757E0004A0FE8 /* AppDelegate.swift */; };
 		60E1AB98216757E0004A0FE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E1AB97216757E0004A0FE8 /* ViewController.swift */; };
 		60E1AB9B216757E0004A0FE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E1AB99216757E0004A0FE8 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60B0014A216ADA7600C5D370 /* RotateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateViewController.swift; sourceTree = "<group>"; };
 		60E1AB92216757E0004A0FE8 /* MovieRotate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieRotate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E1AB95216757E0004A0FE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60E1AB97216757E0004A0FE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				60E1AB95216757E0004A0FE8 /* AppDelegate.swift */,
 				60E1AB97216757E0004A0FE8 /* ViewController.swift */,
+				60B0014A216ADA7600C5D370 /* RotateViewController.swift */,
 				60E1AB99216757E0004A0FE8 /* Main.storyboard */,
 				60E1AB9C216757E0004A0FE8 /* Assets.xcassets */,
 				60E1AB9E216757E0004A0FE8 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60E1AB98216757E0004A0FE8 /* ViewController.swift in Sources */,
+				60B0014B216ADA7700C5D370 /* RotateViewController.swift in Sources */,
 				60E1AB96216757E0004A0FE8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

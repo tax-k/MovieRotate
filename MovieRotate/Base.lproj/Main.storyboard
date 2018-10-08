@@ -39,14 +39,36 @@
             </objects>
             <point key="canvasLocation" x="577" y="133"/>
         </scene>
-        <!--View Controller-->
+        <!--Rotate View Controller-->
         <scene sceneID="qyO-tY-wlR">
             <objects>
-                <viewController storyboardIdentifier="rotate" id="PhY-AS-xkJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rotate" id="PhY-AS-xkJ" customClass="RotateViewController" customModule="MovieRotate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tIS-gH-xvH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbR-yi-m10">
+                                <rect key="frame" x="30" y="50" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeAction:" destination="PhY-AS-xkJ" eventType="touchUpInside" id="TQe-0q-nDI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FV8-1Z-114">
+                                <rect key="frame" x="164" y="328.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="rotateBackAction:" destination="PhY-AS-xkJ" eventType="touchUpInside" id="PSy-Cs-xNT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FV8-1Z-114" firstAttribute="centerX" secondItem="luO-RC-ATA" secondAttribute="centerX" id="FmJ-ms-R8V"/>
+                            <constraint firstItem="HbR-yi-m10" firstAttribute="leading" secondItem="luO-RC-ATA" secondAttribute="leading" constant="30" id="V5P-Vl-2qN"/>
+                            <constraint firstItem="FV8-1Z-114" firstAttribute="centerY" secondItem="luO-RC-ATA" secondAttribute="centerY" id="Y4c-WA-ZCA"/>
+                            <constraint firstItem="HbR-yi-m10" firstAttribute="top" secondItem="luO-RC-ATA" secondAttribute="top" constant="30" id="qgQ-e7-JxR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="luO-RC-ATA"/>
                     </view>
                 </viewController>
